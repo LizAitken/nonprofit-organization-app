@@ -2,48 +2,48 @@
 INSERT INTO
 students (student_id, first_name, last_name, age, sponsorship, grades_id, money, student_photo)
 VALUES
-(1,'Wells','Esby',12,'partial',1,51.21,'http://dummyimage.com/32x32.jpg/5fa2dd/ffffff'),
-(2,'Kristine','Camden',8,'full',2,62.93,'http://dummyimage.com/32x32.jpg/5fa2dd/ffffff'),
-(3,'Ansel','Brewett',8,'full',4,97.48,'http://dummyimage.com/32x32.jpg/5fa2dd/ffffff'),
-(4,'Fanny','Sidebottom',8,'partial',2,73.28,'http://dummyimage.com/32x32.jpg/5fa2dd/ffffff'),
-(5,'Kiel','Southcomb',9,'partial',5,57.74,'http://dummyimage.com/32x32.jpg/5fa2dd/ffffff'),
-(6,'Bernadette','Yacobsohn',12,'partial',5,61.72,'http://dummyimage.com/32x32.jpg/5fa2dd/ffffff'),
-(7,'Niels','Blabie',13,'partial',6,47.37,'http://dummyimage.com/32x32.jpg/5fa2dd/ffffff'),
-(8,'Kaitlin','Whifen',17,'partial',7,79.6,'http://dummyimage.com/32x32.jpg/5fa2dd/ffffff'),
-(9,'Westbrooke','Steabler',3,'partial',9,26.56,'http://dummyimage.com/32x32.jpg/5fa2dd/ffffff'),
-(10,'Heall','Forstall',10,'full',1,18.27,'http://dummyimage.com/32x32.jpg/5fa2dd/ffffff'),
-(11,'Menard','Creelman',2,'full',3,83.52,'http://dummyimage.com/32x32.jpg/5fa2dd/ffffff'),
-(12,'Cassaundra','Sayre',4,'full',7,46.37,'http://dummyimage.com/32x32.jpg/5fa2dd/ffffff'),
-(13,'Kora','Dovidaitis',10,'full',8,3.12,'http://dummyimage.com/32x32.jpg/5fa2dd/ffffff'),
-(14,'Bibby','Kiezler',16,'full',4,29.93,'http://dummyimage.com/32x32.jpg/5fa2dd/ffffff'),
-(15,'Beverlie','Altimas',3,'full',5,99.98,'http://dummyimage.com/32x32.jpg/5fa2dd/ffffff'),
-(16,'Kendell','Nester',16,'partial',2,14.62,'http://dummyimage.com/32x32.jpg/5fa2dd/ffffff'),
-(17,'Hanan','Behnecke',12,'partial',4,10.96,'http://dummyimage.com/32x32.jpg/5fa2dd/ffffff'),
-(18,'Honoria','Iacapucci',3,'partial',8,42.49,'http://dummyimage.com/32x32.jpg/5fa2dd/ffffff'),
-(19,'Nestor','Daine',17,'full',9,27.49,'http://dummyimage.com/32x32.jpg/5fa2dd/ffffff'),
-(20,'Rosene','Kenward',11,'partial',4,97.26, 'http://dummyimage.com/32x32.jpg/5fa2dd/ffffff');
+(1,'Wells','Esby',12,'partial',1,51.21,'http://turbophoto.com/Free-Stock-Images/Images/Child%20Girl%20Using%20Computer.jpg'),
+(2,'Kristine','Camden',8,'full',2,62.93,'http://turbophoto.com/Free-Stock-Images/Images/Ancient%20Horse%20-%2027%20Years%20Old.jpg'),
+(3,'Ansel','Brewett',8,'full',4,97.48,'http://turbophoto.com/Free-Stock-Images/Images/Autumn_Flowers_Kitty.jpg'),
+(4,'Fanny','Sidebottom',8,'partial',2,73.28,'http://turbophoto.com/Free-Stock-Images/Images/Bird%20and%20Young.jpg'),
+(5,'Kiel','Southcomb',9,'partial',5,57.74,'http://turbophoto.com/Free-Stock-Images/Images/Bird%20Flying.jpg'),
+(6,'Bernadette','Yacobsohn',12,'partial',5,61.72,'http://turbophoto.com/Free-Stock-Images/Images/Black%20Cow.jpg'),
+(7,'Niels','Blabie',13,'partial',6,47.37,'http://turbophoto.com/Free-Stock-Images/Images/Bird%20On%20Wire%20Fence.jpg'),
+(8,'Kaitlin','Whifen',17,'partial',7,79.6,'http://turbophoto.com/Free-Stock-Images/Images/Canadian%20Goose.jpg'),
+(9,'Westbrooke','Steabler',3,'partial',9,26.56,'http://turbophoto.com/Free-Stock-Images/Images/Blackbird%20coming%20in%20for%20a%20landing.jpg'),
+(10,'Heall','Forstall',10,'full',1,18.27,'http://turbophoto.com/Free-Stock-Images/Images/Bird%20on%20Wire.jpg'),
+(11,'Menard','Creelman',2,'full',3,83.52,'http://turbophoto.com/Free-Stock-Images/Images/Cow.jpg'),
+(12,'Cassaundra','Sayre',4,'full',7,46.37,'http://turbophoto.com/Free-Stock-Images/Images/Cute%20Soft%20Puppy%20Dog.jpg'),
+(13,'Kora','Dovidaitis',10,'full',8,3.12,'http://turbophoto.com/Free-Stock-Images/Images/Deer.jpg'),
+(14,'Bibby','Kiezler',16,'full',4,29.93,'http://turbophoto.com/Free-Stock-Images/Images/Cute%20White%20Puppy.jpg'),
+(15,'Beverlie','Altimas',3,'full',5,99.98,'http://turbophoto.com/Free-Stock-Images/Images/Echidna.jpg'),
+(16,'Kendell','Nester',16,'partial',2,14.62,'http://turbophoto.com/Free-Stock-Images/Images/Elephant.jpg'),
+(17,'Hanan','Behnecke',12,'partial',4,10.96,'http://turbophoto.com/Free-Stock-Images/Images/Elk%20on%20Hill.JPG'),
+(18,'Honoria','Iacapucci',3,'partial',8,42.49,'http://turbophoto.com/Free-Stock-Images/Images/Dark%20Cat.jpg'),
+(19,'Nestor','Daine',17,'full',9,27.49,'http://turbophoto.com/Free-Stock-Images/Images/Cute%20Green%20Tree%20Frog.jpg'),
+(20,'Rosene','Kenward',11,'partial',4,97.26, 'http://turbophoto.com/Free-Stock-Images/Images/Cute%20Dogs%20Sleeping.jpg');
 
 --create dummy sponsors
 INSERT INTO sponsors
 (sponsor_id, first_name, last_name, email, phone, money_donated, date_paid, date_deposited, photo, link_id)
 VALUES 
-(1, 'Lefty', 'Dulany', 'ldulany0@baidu.com', '839-496-7890', 2.30, '8/19/2018', '4/10/2019', 'http://dummyimage.com/32x32.jpg/cc0000/ffffff', 1),
-(2, 'Charity', 'Sleith', 'csleith1@networksolutions.com', '313-745-9419', 0.52, '7/26/2018', '11/5/2018', 'http://dummyimage.com/32x32.png/5fa2dd/ffffff', 2),
-(3, 'Milli', 'Gervaise', 'mgervaise2@independent.co.uk', '967-776-0008', 2.17, '11/1/2018', '3/21/2019', 'http://dummyimage.com/32x32.jpg/cc0000/ffffff', 3),
-(4, 'Tabbie', 'Densun', 'tdensun3@chicagotribune.com', '168-960-0285', 8.89, '3/6/2019', '8/21/2018', 'http://dummyimage.com/32x32.bmp/dddddd/000000', 4),
-(5, 'Vinny', 'Bassil', 'vbassil4@ihg.com', '853-854-2379', 3.58, '12/17/2018', '6/3/2019', 'http://dummyimage.com/32x32.bmp/5fa2dd/ffffff', 5),
-(6, 'Oralie', 'Chuck', 'ochuck5@prweb.com', '693-803-0646', 6.97, '5/6/2019', '8/25/2018', 'http://dummyimage.com/32x32.bmp/5fa2dd/ffffff', 6), 
-(7, 'Perice', 'Hawkeswood', 'phawkeswood6@1688.com', '823-366-7010', 2.10, '9/16/2018', '8/6/2018', 'http://dummyimage.com/32x32.jpg/cc0000/ffffff', 7),
-(8, 'Jaimie', 'Ferriman', 'jferriman7@salon.com', '410-987-3798', 6.24, '6/30/2018', '3/2/2019', 'http://dummyimage.com/32x32.png/5fa2dd/ffffff', 8), 
-(9, 'Dall', 'Jansey', 'djansey8@exblog.jp', '684-938-2700', 1.26, '4/16/2019', '1/24/2019', 'http://dummyimage.com/32x32.jpg/5fa2dd/ffffff', 9), 
-(10, 'Romeo', 'Dragge', 'rdragge9@dailymail.co.uk', '545-463-2419', 1.52, '10/11/2018', '4/28/2019', 'http://dummyimage.com/32x32.png/ff4444/ffffff', 10);
+(1, 'Lefty', 'Dulany', 'ldulany0@baidu.com', '839-496-7890', 2.30, '8/19/2018', '4/10/2019', 'http://turbophoto.com/Free-Stock-Images/Images/Cute%20Sleeping%20Bird.jpg', 1),
+(2, 'Charity', 'Sleith', 'csleith1@networksolutions.com', '313-745-9419', 0.52, '7/26/2018', '11/5/2018', 'http://turbophoto.com/Free-Stock-Images/Images/Cows%20(1).jpg', 2),
+(3, 'Milli', 'Gervaise', 'mgervaise2@independent.co.uk', '967-776-0008', 2.17, '11/1/2018', '3/21/2019', 'http://turbophoto.com/Free-Stock-Images/Images/Dark%20Lizard.jpg', 3),
+(4, 'Tabbie', 'Densun', 'tdensun3@chicagotribune.com', '168-960-0285', 8.89, '3/6/2019', '8/21/2018', 'http://turbophoto.com/Free-Stock-Images/Images/Flowers%20(177).jpg', 4),
+(5, 'Vinny', 'Bassil', 'vbassil4@ihg.com', '853-854-2379', 3.58, '12/17/2018', '6/3/2019', 'http://turbophoto.com/Free-Stock-Images/Images/Flowers%20(179).jpg', 5),
+(6, 'Oralie', 'Chuck', 'ochuck5@prweb.com', '693-803-0646', 6.97, '5/6/2019', '8/25/2018', 'http://turbophoto.com/Free-Stock-Images/Images/Flowers%20(194).jpg', 6), 
+(7, 'Perice', 'Hawkeswood', 'phawkeswood6@1688.com', '823-366-7010', 2.10, '9/16/2018', '8/6/2018', 'http://turbophoto.com/Free-Stock-Images/Images/Flowers%20(205).jpg', 7),
+(8, 'Jaimie', 'Ferriman', 'jferriman7@salon.com', '410-987-3798', 6.24, '6/30/2018', '3/2/2019', 'http://turbophoto.com/Free-Stock-Images/Images/Flowers%20(216).jpg', 8), 
+(9, 'Dall', 'Jansey', 'djansey8@exblog.jp', '684-938-2700', 1.26, '4/16/2019', '1/24/2019', 'http://turbophoto.com/Free-Stock-Images/Images/Flowers%20(208).jpg', 9), 
+(10, 'Romeo', 'Dragge', 'rdragge9@dailymail.co.uk', '545-463-2419', 1.52, '10/11/2018', '4/28/2019', 'http://turbophoto.com/Free-Stock-Images/Images/Flowers%20(226).jpg', 10);
 
 --create dummy users
 INSERT INTO users
 (password, first_name, last_name, email, phone, photo, user_type)
 VALUES
-('123', 'Liz', 'Aitken', 'liz_aitken@gmail.com', '555-555-5555', 'https://dummyimage.com/64x64/009dff/ffffff', 'admin'),
-('123', 'Jack', 'Faulk', 'jack_faulk@gmail.com', '123-456-7890', 'https://dummyimage.com/64x64/fff/000', 'volunteer');
+('123', 'Liz', 'Aitken', 'liz_aitken@gmail.com', '555-555-5555', 'http://turbophoto.com/Free-Stock-Images/Images/Girl%20on%20Railing.jpg', 'admin'),
+('123', 'Jack', 'Faulk', 'jack_faulk@gmail.com', '123-456-7890', 'http://turbophoto.com/Free-Stock-Images/Images/US%20Coast%20Guard.JPG', 'volunteer');
 
 --create dummy families
 INSERT INTO families
