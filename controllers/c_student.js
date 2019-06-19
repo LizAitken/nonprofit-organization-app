@@ -69,7 +69,7 @@ exports.addStudent_get = (req, res) => {
 
 /* POST handler for add student page */
 exports.addStudent_post = async (req, res) => {
-    const { first_name, last_name, age, sponsorship, money } = req.body;
+    const { first_name, last_name, age, sponsorship, money, student_photo } = req.body;
 
     // to avoid insert issue resulting from external database seeding, get
     // max id of students table, then use max+1 for id
@@ -79,7 +79,7 @@ exports.addStudent_post = async (req, res) => {
 
     // now, instantiate student with said id+1
     const student = new Students(maxId.max+1, first_name, last_name, age, sponsorship,
-                                null, money);
+                                money, null);
 
     student.addStudent(maxLinkId.max).then(() => {
         res.redirect('/students');

@@ -1,39 +1,43 @@
-<section class="table-wrapper">
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Student ID</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Age</th>
-                <th>Sponsorship Status</th>
-                <th>Grade</th>
-                <th>School</th>
-                <th>How much is in their account?</th>
-                <th>Family Name</th>
-                <th>Sponsor</th>
-                <th>Student Photo</th>
-                
-            </tr>
-        </thead>
-            <tr>
-                <td>${studentList.student_id}</td>
-                <td>${studentList.first_name}</td>
-                <td>${studentList.last_name}</td>
-                <td>${studentList.age}</td>
-                <td>${studentList.sponsorship}</td>
-                <td>${gradeLevel.level}</td>
-                <td>${schoolName.name}</td>
-                <td>${studentList.money}</td>
-                <td>${familyName.name}</td>
-                <td>${sponsorName.first_name} ${sponsorName.last_name}</td>
-                <td>
+<section class="student-prof-table-wrapper">
+    <div class="photo-name-wrap">
+            <h2 class="person-name">${studentList.first_name} ${studentList.last_name}</h2>
+                <div class="person-photo">
                     <figure class="image is-32x32">
                         <img class="is-rounded" src="${studentList.student_photo}">
                     </figure>
-                </td>
-            </tr>
-            <h3>List of Supplies in Account For ${studentList.first_name} ${studentList.last_name}</h3>
+                </div>
+    </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Age</th>
+                        <th>Sponsorship Status</th>
+                        <th>Grade</th>
+                        <th>School</th>
+                        <th>How much is in their account?</th>
+                        <th>Family Name</th>
+                        <th>Sponsor</th>                       
+                    </tr>
+                </thead>
+                <tbody>  
+                    <tr>
+                        <td>${studentList.student_id}</td>
+                        <td>${studentList.age}</td>
+                        <td>${studentList.sponsorship}</td>
+                        <td>${gradeLevel.level}</td>
+                        <td>${schoolName.name}</td>
+                        <td>${studentList.money}</td>
+                        <td>${familyName.name}</td>
+                        <td>${sponsorName.first_name} ${sponsorName.last_name}</td>
+                    </tr>
+                </tbody>
+            </table>
+</section>
+
+<section class="table-wrapper">
+    <table class="table">
+            <h3 class="supplies-in-profile-name">List of Supplies in Account For ${studentList.first_name} ${studentList.last_name}</h3>
         <thead>  
             <tr>
                 <th>Supply ID</th>
@@ -42,16 +46,19 @@
                 <th>Quantity in Stock</th>
             </tr>
         </thead>
-        ${suppliesList.map(item =>
-            `<tr>
-                <td>${item.supply_id}</td>
-                <td>${item.supply_name}</td>
-                <td>${item.unit_cost}</td>  
-                <td>${item.quantity}</td>         
-            </tr>`
-            ).join('')}               
+        <tbody>
+            ${suppliesList.map(item =>
+             `<tr>
+                    <td>${item.supply_id}</td>
+                    <td>${item.supply_name}</td>
+                    <td>${item.unit_cost}</td>  
+                    <td>${item.quantity}</td>         
+                </tr>`
+                ).join('')}  
+        </tbody>             
     </table>                        
-    
-    <a class="button is-primary" href="/students/${studentList.student_id}/add-supply">Add Supply Item</a>
-    <a class="button is-primary" href="/students/${studentList.student_id}/delete-supply">Remove Supply Item</a>
+    <div class="studentlist-btns">
+        <a class="form-button-studentslist" href="/students/${studentList.student_id}/add-supply">Add Supply Item</a>
+        <a class="form-button-studentslist" href="/students/${studentList.student_id}/delete-supply">Remove Supply Item</a>
+    </div>
 </section>

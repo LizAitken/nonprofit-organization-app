@@ -67,6 +67,13 @@ body {
 
 .user-greeting {
     text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.user-greeting:hover {
+    letter-spacing: 0.125rem;
 }
 
 .template-container {
@@ -83,12 +90,12 @@ body {
     grid-template-rows: auto;
 }
 
-.index-table-links {
+.index-table-links a{
     margin: .7rem;
     width: 20rem;
     height: 20rem;
     border: 3px solid black;
-    background: #90D2C0;
+    background: rgb(226, 144, 106);
     border-radius: 35px;
     display: flex;
     flex-direction: column;
@@ -96,35 +103,66 @@ body {
     text-align: center;
     font-size: 2rem;
     outline: none;
+    z-index: 1;
 }
+
+#one a{
+    background-image: url("images/icons8-students-500.png");
+    background-size: cover;
+} 
 
 .index-table-links:hover {
-    background: #699C84;
+    opacity: .5;
 }
 
-/* #one {
-    background: #90D2C0;
+#two a{
+    background-image: url("images/icons8-trust-500.png");
+    background-size: cover;
 }
 
-#two {
-    background: #90D2C0;
+#three a{
+    background-image: url("images/icons8-store-500.png");
+    background-size: cover;
 }
 
-#three{
-    background: #90D2C0;
+#four a{
+    background-image: url("images/icons8-class-500.png");
+    background-size: cover;
 }
 
-#four{
-    background: #90D2C0;
+#five a{
+    background-image: url("images/icons8-group-500.png");
+    background-size: cover;
 }
 
-#five{
-    background: #90D2C0;
+#six a {
+    background-image: url("images/icons8-to-do-list-500.png");
+    background-size: cover;
+} 
+
+.entry-photo-wrap {
+    display: flex;
+    justify-content: center;
 }
 
-#six {
-    background: #90D2C0;
-} */
+.entry-photo {
+    width: 19rem;
+    height: 19rem;
+    background-image: url("images/help.png");
+    background-size: cover;
+    margin: 2rem;
+    animation: fadein 4s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+
 
 /* Login & signup page styling */
 .login-form-wrap{
@@ -299,6 +337,29 @@ body {
     flex-direction: column;
 }
 
+.student-prof-table-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.photo-name-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.person-name {
+    font-size: 2.2rem;
+    padding: 0 0 1rem 0;
+}
+
+.supplies-in-profile-name {
+    font-size: 22px;
+    padding: 2rem 0 1rem 0;
+}
+
 table {
 	width: 890px;
 	border-collapse: collapse;
@@ -414,5 +475,19 @@ tbody td:hover tbody td:before {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
 
+.footer-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 8px;
+    margin: 1rem;
+    background: #90D2C0;
+    color: black;
+}
+
+.footer-links a:hover {
+    opacity: .5;
 }
