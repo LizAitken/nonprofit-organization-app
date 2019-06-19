@@ -462,8 +462,10 @@ tbody td:hover tbody td:before {
         background-color: rgb(230, 124, 75);
 }
 
-
-
+.profile-photo {
+    width: 5rem;
+    height: 5rem;
+}
 /* Footer portion of page on template */
 
 .footer-nav {
