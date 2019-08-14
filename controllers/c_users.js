@@ -80,7 +80,8 @@ exports.user_profile = async (req, res) => {
         locals: {
             title: user.first + " Profile",
             is_logged_in: req.session.is_logged_in,
-            userName: [user.first, user.last],
+            first_name: req.session.first_name,
+            userName: req.session.first_name,
             user: user
         },
         partials: {
